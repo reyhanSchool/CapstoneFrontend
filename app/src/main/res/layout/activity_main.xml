@@ -7,11 +7,7 @@
     tools:context=".MainActivity" >
 
 
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        app:srcCompat="@drawable/app_logo" />
+    <include layout="@layout/toolbar" />
 
 
     <LinearLayout

@@ -6,19 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
-    <ImageView
-        android:id="@+id/appLogo"
-        android:contentDescription="Wellness App Logo"
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        app:srcCompat="@drawable/app_logo" />
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolBarHomePage"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-50sp" />
+        android:layout_marginTop="-50sp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
