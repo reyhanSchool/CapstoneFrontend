@@ -1,0 +1,82 @@
+<!-- res/layout/patient_info_card.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/rounded_corner">
+
+    <!-- Patient Name -->
+    <LinearLayout
+        android:id="@+id/linearLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <!-- Age -->
+    <LinearLayout
+        android:id="@+id/linearLayoutAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutName"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewAgeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <!-- Medications -->
+    <LinearLayout
+        android:id="@+id/linearLayoutMedications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutAge"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewMedicationsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medications:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewMedications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aspirin, Ibuprofen"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

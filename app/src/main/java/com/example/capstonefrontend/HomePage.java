@@ -33,7 +33,7 @@ public class HomePage extends AppCompatActivity{
 
         //Going to use a recycler view to display all of the elders
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        List<String> buttonNames = Arrays.asList("BUtton1", "Button2", "Button3", "Button4");
+        List<String> buttonNames = Arrays.asList("Button1", "Button2", "Button3", "Button4");
 
         HomePageItemAdapter adapter = new HomePageItemAdapter(buttonNames);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
